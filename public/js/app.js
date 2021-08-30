@@ -10,7 +10,7 @@ searchForm.addEventListener("submit", (e) => {
 
   const address = input.value;
 
-  fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+  fetch(`/weather?address=${address}`).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         message1.textContent = data.error;
