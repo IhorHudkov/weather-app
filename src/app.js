@@ -22,22 +22,22 @@ app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Very nice home page",
+    title: "Weather",
     name: "Ihor Hudkov",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About Page!!!",
+    title: "About",
     name: "Ihor Hudkov",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help super page",
-    message: "Little help",
+    title: "Help",
+    helpText: "This is a page for useful information.",
     name: "Ihor Hudkov",
   });
 });
