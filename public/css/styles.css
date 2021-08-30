@@ -1,0 +1,14 @@
+.footer {
+    background-color: #ccc;
+    color: red;
+    min-height: 80px;
+    width: 100%;
+    position: absolute;
+    top: calc(100vh - 80px);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    margin-top: 26px;
+}
